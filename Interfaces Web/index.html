@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Arte - Ana Alfaro</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family,wght@0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="img/icono.jpg">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/normalize.css">
+
+    <script>
+    $(document).ready(function(){
+      $("a.scroll").scrollomatic();
+    });
+  </script>
+
+</head>
+<body>
+   <header>
+
+    <nav>
+      <ul>
+        <li><a href="#home" class="scroll">Home</a></li>
+        <li><a href="#arte" class="scroll">Arte</a></li>
+        <li><a href="#contacto" class="scroll">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main id="contenido">
+
+       <section id="home">
+        <div id="globo"></div>
+        <h2>La mejor página de <span>ARTE</span></h2>
+        <p>El arte es la única forma de escapar sin salir de casa.</p>
+        <a href="#arte"  class="scroll">Conozca más</a>
+        <div id="abajo"></div>
+       </section>
+
+        <section id="arte">
+        <h3>¿QUÉ ES?</h3>
+        <article>
+          <h4>Arte</h4>
+          <div id="imagen1"></div>
+          <p>Arte es sobre todo un estado del alma.<a href="arte.html">Leer más</a><br></p>
+          
+          <h4>Dibujo</h4>
+          <div id="imagen2"></div>
+          <p>Si no puedo dibujarlo, es que no lo entiendo.</p>
+          <a href="dibujo.html">Leer más</a><br>
+          <h4>Fotografía</h4>
+          <div id="imagen3"></div>
+          <p>El componente más importante de una cámara está detrás de ella.</p>
+          <a href="fotografia.html">Leer más</a>
+        </article>
+      </section>
+       <section id="contacto">
+        <h3>Contáctanos</h3>
+        <div id="formulario">
+          <form action="" method="post">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="tel" name="telefono" id="telefono" placeholder="Telefono" pattern="[0-9]{3}\s[0-9]{3}\s[0-9]{4}$" title="Debe ser un número telefónico con la estructura XXX XXX XXXX, teniendo en cuenta los espacios"  required>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+            <input type="submit" value="Enviar datos">
+          </form>
+        </div>
+        <div id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21249.474250138854!2d-98.98237697278293!3d19.695082991268723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ed3d006006e5%3A0x6131a72e95634633!2sUniversidad+Tecnol%C3%B3gica+de+Tec%C3%A1mac%2C+Carretera+Federal+M%C3%A9xico+-+Pachuca+Km+37.5%2C+CP+55740%2C+Col.+Sierra+Hermosa%2C+Tec%C3%A1mac%2C+Estado+de%2C+55740+San+Mart%C3%ADn+Azcatepec%2C+M%C3%A9x.!5e0!3m2!1ses!2smx!4v1558113356849!5m2!1ses!2smx" width="600" height="450" ></iframe>
+        </div>
+        <a href="#contenido" class="arriba scroll"></a>
+      </section>
+    <footer>
+      <p>Copyritht &copy; 2020 Ana Alfaro - Todos los derechos reservados</p>
+    </footer>
+  </main>
+</body>
+</html>
